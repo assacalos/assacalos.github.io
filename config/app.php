@@ -137,10 +137,12 @@ return [
     */
 
     'providers' => [
+        
 
         /*
          * Laravel Framework Service Providers...
          */
+        Jenssegers\Date\DateServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -193,5 +195,6 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // ...
     ])->toArray(),
+    'Date' => Jenssegers\Date\Date::class,
 
 ];
