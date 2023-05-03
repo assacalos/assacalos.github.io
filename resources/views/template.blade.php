@@ -105,7 +105,7 @@
           <a class="nav-link active" aria-current="page" href="{{route('etudiant')}}">Inscription Etudiants</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('ue')}}">Gestion des UES</a>
+          <a class="nav-link" href="{{ route('ue')}}">Gestion des UES & ECUES </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route('etudiant-ue')}}">Insciption par lot</a>
@@ -113,6 +113,10 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ route('Inscription-pedagogique')}}">Inscription pedagogique</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('seances')}}">Seances</a>
+        </li>
+        
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -142,5 +146,6 @@
 
       <script src="{{ asset( 'js/offcanvas-navbar.js') }}"></script>
       @livewireScripts()
+      @stack('scripts')
   </body>
 </html>

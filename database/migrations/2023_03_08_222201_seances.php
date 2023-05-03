@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('seances', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Ecue::class);
-            $table->timestamp('date');
+            $table->date('date');
             $table->time('debut');
             $table->time('duree');
 

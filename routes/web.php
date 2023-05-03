@@ -46,4 +46,8 @@ Route::get('/Inscription-pedagogique.html', function () {
     return view('Inscription-pedagogique');
 })->name('Inscription-pedagogique');
 
+Route::get('/seance.html', function () {
+    return view('Seances');
+})->name('seances');
+
 Route::get('/Appel.html', [DataController::class, 'makeAppel'])->name('etudiant-ue');
